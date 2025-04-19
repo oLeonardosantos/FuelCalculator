@@ -16,6 +16,7 @@ class PriceActivity : AppCompatActivity() {
 
         btnProximo.setOnClickListener {
             val intent = Intent(this, ConsumoCarActivity::class.java)
+            intent.putExtra("preco", editText.text.toString().toFloat())
             startActivity(intent)
         }
     }

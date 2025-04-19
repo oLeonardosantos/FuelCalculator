@@ -20,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$51.0"
@@ -96,5 +97,44 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/price_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/revisao"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <TextView
+        android:id="@+id/consumo_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_resultado"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <TextView
+        android:id="@+id/km_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consumo_resultado"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -64,7 +64,7 @@
             android:id="@+id/edt_preco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex:5.69 l"
+            android:hint="Ex:5.69 L"
             android:inputType="numberDecimal"
             android:maxLength="4" />
 

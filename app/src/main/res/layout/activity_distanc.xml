@@ -28,7 +28,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/distanci"
+        android:id="@+id/distancia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Distancia até o destino"
@@ -49,7 +49,7 @@
         android:textColor="@color/red"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
-        app:layout_constraintTop_toBottomOf="@id/distanci"/>
+        app:layout_constraintTop_toBottomOf="@id/distancia"/>
 
     <Button
         android:id="@+id/btn_calcular"
