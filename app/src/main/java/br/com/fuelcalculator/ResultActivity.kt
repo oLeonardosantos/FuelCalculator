@@ -20,13 +20,12 @@ class ResultActivity : AppCompatActivity() {
         val distancia = intent.getIntExtra("distancia", 0)
 
         val resultPreco = findViewById<TextView>(R.id.price_resultado)
-        resultPreco.text = preco.toString()
-
         val resultConsumo = findViewById<TextView>(R.id.consumo_resultado)
-        resultPreco.text = preco.toString()
-
         val resultKm = findViewById<TextView>(R.id.km_resultado)
-        resultPreco.text = preco.toString()
+
+        resultPreco.text = "R$ %.2f".format(preco)
+        resultConsumo.text = "$consumo km/L"
+        resultKm.text = "$distancia km"
 
         val result = (distancia.toFloat() / consumo.toFloat()) * preco
 
@@ -36,6 +35,7 @@ class ResultActivity : AppCompatActivity() {
         btnNew.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
