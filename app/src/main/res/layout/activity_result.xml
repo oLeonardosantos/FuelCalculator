@@ -8,7 +8,7 @@
     tools:context=".ResultActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/dark_blue">
+    android:background="@color/gray">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/vg_header"
@@ -91,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@color/green"
         android:hint="New Calculo"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

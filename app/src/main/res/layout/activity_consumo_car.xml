@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_blue"
+    android:background="@color/gray"
     tools:context=".PriceActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -56,8 +56,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@color/green"
         android:hint="Próximo"
+        app:hintEnabled="false"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/roudend_bg"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass2de3">
@@ -76,7 +78,9 @@
             android:id="@+id/edt_consumo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex:6 Km/L"
+            android:hint="Ex: 6 Km/L"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:inputType="numberDecimal"
             android:maxLength="4" />
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DistancActivity"
-    android:background="@color/dark_blue">
+    android:background="@color/gray">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/vg_header"
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
-        android:backgroundTint="@color/light_blue"
+        android:backgroundTint="@color/green"
         android:hint="Calcular"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/roudend_bg"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass3de3">
@@ -76,9 +77,11 @@
             android:id="@+id/edtKm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex:6 Km"
+            android:hint="Ex: 6 Km"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:inputType="numberDecimal"
-            android:maxLength="4" />
+            android:maxLength="3" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

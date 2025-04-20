@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/dark_blue">
+    android:background="@color/gray">
 
     <LinearLayout
         android:id="@+id/vg_header"
@@ -67,7 +67,7 @@
         android:layout_margin="14dp"
         android:hint="Iniciar"
         android:textColorHint="@color/white"
-        android:backgroundTint="@color/light_blue"/>
+        android:backgroundTint="@color/green"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
