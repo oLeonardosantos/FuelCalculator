@@ -8,24 +8,17 @@
     android:background="@color/gray"
     tools:context=".PriceActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/vg_header"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_gas"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@drawable/gradient_bg"
-        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gas"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/iocon_car"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
 
     <TextView
         android:id="@+id/consumoCar"
@@ -34,8 +27,8 @@
         android:text="Preço do combutível"
         android:textStyle="bold"
         android:textSize="24sp"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/vg_header"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/img_gas"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp" />
@@ -60,7 +53,7 @@
         android:layout_marginEnd="16dp"
         android:layout_weight="1"
         android:background="@drawable/roudend_edit_text"
-        android:hint="Ex: 5.69"
+        android:hint="Ex: 5.69$"
         android:inputType="numberDecimal"
         android:padding="12dp"
         android:singleLine="true"
@@ -78,7 +71,7 @@
         android:backgroundTint="@color/green"
         android:hint="Próximo"
         app:hintEnabled="false"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

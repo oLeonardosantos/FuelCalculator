@@ -6,7 +6,7 @@
         android:bottomRightRadius="80dp"/>
 
     <gradient android:startColor="@color/white"
-        android:endColor="@color/bluee"
+        android:endColor="#607BE0"
         android:angle="90"/>
 
 </shape>
