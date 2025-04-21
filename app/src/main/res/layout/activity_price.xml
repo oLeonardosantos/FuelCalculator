@@ -71,7 +71,7 @@
         android:backgroundTint="@color/green"
         android:hint="Próximo"
         app:hintEnabled="false"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
