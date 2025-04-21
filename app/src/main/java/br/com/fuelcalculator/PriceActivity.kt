@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.snackbar.Snackbar
 
 class PriceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +14,10 @@ class PriceActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.edt_preco)
         val btnProximo = findViewById<Button>(R.id.btn_proximo)
 
-            btnProximo.setOnClickListener {
-                val intent = Intent(this, ConsumoCarActivity::class.java)
-                intent.putExtra("preco", editText.text.toString().toFloat())
-                startActivity(intent)
-            }
+        btnProximo.setOnClickListener {
+            val intent = Intent(this, ConsumoCarActivity::class.java)
+            intent.putExtra("preco", editText.text.toString().toFloat())
+            startActivity(intent)
         }
     }
+}
