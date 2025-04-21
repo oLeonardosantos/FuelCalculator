@@ -28,7 +28,6 @@ class ResultActivity : AppCompatActivity() {
         resultKm.text = "$distancia km"
 
         val result = (distancia.toFloat() / consumo.toFloat()) * preco
-
         val tvResult = findViewById<TextView>(R.id.result)
         tvResult.text = "$ %.2f".format(result)
 
