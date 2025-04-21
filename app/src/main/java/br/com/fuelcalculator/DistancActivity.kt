@@ -14,7 +14,7 @@ class DistancActivity : AppCompatActivity() {
         val btnCalcular = findViewById<Button>(R.id.btn_calcular)
         val preco = intent.getFloatExtra("preco", 0f)
         val consumo = intent.getIntExtra("consumo", 0)
-        val distancia = findViewById<EditText>(R.id.edtKm)
+        val distancia = findViewById<EditText>(R.id.edt_km)
 
 
         btnCalcular.setOnClickListener {
